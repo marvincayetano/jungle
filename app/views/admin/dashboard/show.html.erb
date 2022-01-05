@@ -1,2 +1,15 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section class="admin-products-index">
+
+  <header class="page-header">
+    <h1>Admin &raquo; Dashboard</h1>
+  </header>
+
+  <%= link_to [:admin, :products], class: 'btn btn-primary' do %>
+    Products <span class="badge"><%= @products_count %></span>
+  <% end %>
+
+  <%= link_to [:admin, :products], class: 'btn btn-primary' do %>
+    Categories <span class="badge"><%= @categories_count %></span>
+  <% end %>
+
+</section>
