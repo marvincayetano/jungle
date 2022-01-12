@@ -17,7 +17,7 @@
     <% end %>
   </footer>
 
-  <% if product.quantity == 0 %>
+  <% if product.isSoldOut? %>
     <aside class="quantity">
         SOLD OUT!
     </aside>
