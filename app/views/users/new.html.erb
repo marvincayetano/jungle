@@ -1,5 +1,13 @@
 <h1>Signup!</h1>
 
+<% if flash[:error] %>
+  <div class="alert alert-info" role="alert">
+    <p>
+      <%= flash[:error] %>
+    </p>
+  </div>
+<% end %>
+
 <%= form_for :user, url: '/users' do |f| %>
   <div class="account-login">
     <div class="form-group">
